@@ -1,0 +1,26 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WebApplication1.Site1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Master Page</title>   
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table border="1px solid black">
+            <tr>
+                <td><a href="WebForm1.aspx">Select</a></td>
+                <td><a href="WebForm2.aspx">Insert</a></td>
+                <td><a href="WebForm3.aspx">Update</a></td>
+                <td><a href="WebForm4.aspx">Delete</a></td>
+            </tr>
+        </table>
+        <asp:ContentPlaceHolder ID="contenu" runat="server">
+            
+        </asp:ContentPlaceHolder>    
+    </div>
+    </form>
+</body>
+</html>
